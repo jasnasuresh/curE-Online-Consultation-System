@@ -1,0 +1,110 @@
+body{
+    background: #333;
+    margin: 0;
+    padding: 0;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+.bg {
+    animation:slide 3s ease-in-out infinite alternate;
+    background-image: linear-gradient(-60deg, #6c3 50%, #09f 50%);
+    bottom:0;
+    left:-50%;
+    opacity:.5;
+    position:fixed;
+    right:-50%;
+    top:0;
+    z-index:-1;
+  }
+    
+    .bg2 {
+    animation-direction:alternate-reverse;
+    animation-duration:4s;
+    }
+    .bg3 {
+    animation-duration:5s;
+     }
+.container{
+    width: 360px;
+    height: 600px;
+    background: url(bgnew.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    text-align: center;
+}
+
+.container h1{
+    font-size: 40px;
+    margin-top: 125px;
+    margin-bottom: 60px;
+}
+.tbox{
+    width: 260px;
+    height: 40px;
+    background: #e7e7da;
+    border-radius: 10px;
+    margin: 10px auto;
+}
+.tbox input{
+    background: none;
+    border: none;
+    outline: none;
+    text-align: center;
+    width: 90%;
+    line-height: 37px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 14px;
+    color: #333;
+}
+.btn{
+    width: 260px;
+    height: 40px;
+    background: #3734eb;
+    border-radius: 10px;
+    margin: 14px auto;
+    display: block;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 16px;
+    border: none;
+    color: white;
+    cursor: pointer;
+}
+.b1{
+    display: block;
+    width: 260px;
+    padding: 10px 0;
+    text-decoration: none;
+    border-style: double;
+    border-color: black;
+    color: black;
+    text-align: center;
+    margin: auto;
+    transition: 0.4s all;
+}
+.b2{
+    position: absolute;
+    bottom: 80px;
+    left: 50%;
+    transform: translate(-50%);
+    width: 260 px;
+    padding: 10px 0;
+    text-decoration: none;
+    text-align: center;
+    transition: 0.4s all;
+    color: blue;
+}
+a:hover{
+    background: #00000040;
+
+}
+@keyframes slide {
+    0% {
+      transform:translateX(-25%);
+    }
+    100% {
+      transform:translateX(25%);
+    }
+  }

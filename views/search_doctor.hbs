@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Search</title>
+    <link rel="stylesheet" href="style11.css" />
+  </head>
+  <body>
+    
+    <div class="container">
+      <h1>SEARCH FOR DOCTOR</h1>
+   <form action="/auth/search_doctor" method="post">
+      <h2>Location</h2>
+   
+        <div class="tbox">
+        <input type="text" placeholder="Location" value="" name="city">
+    </div>
+    <h2>Specialization</h2>
+    <div class="tbox">
+      <input type="text" placeholder="Specialization" value="" name="specialization">
+    </div>
+      {{#if message }}
+        
+        <h4 class="alert mt-4">{{message}}</h4>
+     {{/if}}
+      
+  <input class="btn" type="submit" name="" value="Search">
+   </form>
+    </div>
+  
+
+    <script src="main.js"></script>
+  </body>
+</html>

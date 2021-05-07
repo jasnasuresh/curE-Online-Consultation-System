@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Signup</title>
+  <link rel="stylesheet" href="/p_sign.css">
+</head>
+<body>
+<div class="bg"></div>
+<div class="bg bg2"></div>
+<div class="bg bg3"></div>
+<div class="container">
+  <h1>Signup</h1>
+
+  <form action="/auth/pupdate" method="post">
+    <div class="form-group">
+        <label for="name"><b>Name: </b></label>
+        <input type="text" value="" name="firstName" class="form-control" id="firstName" />
+    </div>
+    <div class="form-group">
+        <label for="email"><b>Email id: </b></label>
+      <input type="text"  value="" name="email" class="form-control" id="email" />
+    </div>
+    <div class="form-group">
+    <label for="age"><b>Age: </b></label>
+      <input type="number"  value="" name="age" class="form-control" id="age" />
+    </div>
+    <div class="form-group">
+        <label for="pwd"><b>Password: </b></label>
+        <input type="password" value="" name="password" class="form-control" id="pwd" />
+    </div>
+    <div class="form-group">
+        <label for="cpwd"><b>Confirm Password: </b></label>
+        <input type="password" value="" name="cpwd" class="form-control" id="cpwd" />
+    </div>
+    <div class="form-group">
+        <label><b>Location:</b></label>
+        <input id="cityInput" type="text" tabindex="3" name="city" class="form-control" id="location" />
+      </div>
+      {{#if message }}
+        
+        <h4 class="alert mt-4">{{message}}</h4>
+     {{/if}}
+    <input class="btn" type="submit" name="" value="Update">
+    
+  </form>
+     
+</body>
+</html>
