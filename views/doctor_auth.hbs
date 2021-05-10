@@ -1,20 +1,25 @@
+
 <!DOCTYPE html>
 <html>
 <head>
   <meta charset="utf-8">
   <title>Signup</title>
-  <link rel="stylesheet" href="/p_sign.css">
+  <link rel="stylesheet" href="/d1_sign.css">
 </head>
 <body>
+  
 <div class="bg"></div>
 <div class="bg bg2"></div>
 <div class="bg bg3"></div>
+ 
 <div class="container">
-  <h1>Signup</h1>
-
-  <form action="/auth/registerp" method="post">
+  
+<h1>Add Doctor</h1>
+  <form action="/auth/doctor_auth" method="POST">
+ 
+    <button class="button"><a href='https://drive.google.com/folderview?id=1abfk8DJgFNfhK0BYbDPizkODaL9mOUNU/'>Verify</a></button>
     <div class="form-group">
-        <label for="name"><b>Name: </b></label>
+        <label for="firstName "><b>Name: </b></label>
         <input type="text" value="" name="firstName" class="form-control" id="firstName" />
     </div>
     <div class="form-group">
@@ -38,17 +43,41 @@
         <input id="cityInput" type="text" tabindex="3" name="city" class="form-control" id="location" />
       </div>
       <div class="form-group">
+        <label><b>Specialization:</b></label>
+        <input type="text" tabindex="3" name="specialization" class="form-control" id="specialization" />
+      </div>
+      <div class="form-group">
+        <label><b>Qualification:</b></label>
+        <input id="text" type="text" tabindex="3" name="qualification" class="form-control" id="qualification" />
+      </div>
+      <div class="form-group">
+        <label><b>Fee:</b></label>
+        <input id="text" type="text" tabindex="3" name="fee" class="form-control" id="fee" />
+      </div>
+      <div class="form-group">
         <label><b>In which city were you born?</b></label>
         
         <input id="text" type="text" placeholder="Security Question" tabindex="3" name="Answer" class="form-control" id="Answer" />
       </div>
+      <div class="form-group">
+        <label><b>Day:</b></label>
+        <input id="text" type="text" tabindex="3" name="day" class="form-control" id="day" />
+      </div>
+      
+      <div class="form-group">
+        <label><b>Time_on:</b></label>
+        <input id="text" type="time" tabindex="3" name="time" class="form-control" id="time" />
+      </div>
+      <div class="form-group">
+        <label><b>Time_off:</b></label>
+        <input id="text" type="time" tabindex="3" name="time_off" class="form-control" id="time_off" />
+      </div>
+      
+      
       {{#if message }}
         
         <h4 class="alert mt-4">{{message}}</h4>
      {{/if}}
-    <input class="btn" type="submit" name="" value="Create account">
-    
+    <input class="btn" type="submit" name="" value="Register">
   </form>
-     
 </body>
-</html>

@@ -12,7 +12,42 @@ img{
 border-radius:25px;
 
 }
+.flex-container {
+  display: flex;
+  margin-left:220px;
+}
 
+.flex-child {
+  flex: 50%; 
+  float:left;
+  position:relative;
+  margin-right: 5px;
+  width:20%;
+  left:5px;
+  right:5px;
+}  
+.bgcolor{
+  width: 960px;
+  height: 600px;
+  background: url(bgnew.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: absolute;
+  top: 55%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+  text-align: center;
+}
+.flex-child:first-child {
+  flex:50%;
+  float:right;
+  border: white;
+  width:20%;
+  position:relative;
+    margin-right: 0.02px;
+  left:80%;
+  right:5px;
+}
 .flip-card {
 background-color: transparent;
 width: 300px;

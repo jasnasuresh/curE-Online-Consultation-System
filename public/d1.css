@@ -56,6 +56,22 @@ margin-left: 700px;
   color: darkslategrey;
   transform: rotateY(180deg);
 }
+.btn-right {
+
+  padding: 10px;
+  display:block;
+  background-color: rgb(12, 24, 92);
+  color: white;
+  text-align:center;
+  position: absolute;
+  top: 15px;
+  right: 15px;
+
+}
+.btn-right a{
+  text-decoration: none;
+  color: white;
+}
 .button {
   padding: 15px 25px;
   font-size: 24px;
@@ -68,7 +84,10 @@ margin-left: 700px;
   border-radius: 15px;
   box-shadow: 0 9px #999;
 }
-
+.button a{
+  color: white;
+  text-decoration: none;
+}
 .button:hover {background-color: grey}
 
 .button:active {

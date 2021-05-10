@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -10,11 +11,11 @@
 <div class="bg bg2"></div>
 <div class="bg bg3"></div>
 <div class="container">
-  <h1>Signup</h1>
+  <h1>Sign Up</h1>
 
   <form action="/auth/registerd" method="POST">
     <div class="form-group">
-        <label for="name"><b>Name: </b></label>
+        <label for="firstName "><b>Name: </b></label>
         <input type="text" value="" name="firstName" class="form-control" id="firstName" />
     </div>
     <div class="form-group">
@@ -46,9 +47,15 @@
         <input id="text" type="text" tabindex="3" name="qualification" class="form-control" id="qualification" />
       </div>
       <div class="form-group">
+        <label><b>In which city were you born?</b></label>
+        
+        <input id="text" type="text" placeholder="Security Question" tabindex="3" name="Answer" class="form-control" id="Answer" />
+      </div>
+      <div class="form-group">
         <label><b>Day:</b></label>
         <input id="text" type="text" tabindex="3" name="day" class="form-control" id="day" />
       </div>
+      
       <div class="form-group">
         <label><b>Time_on:</b></label>
         <input id="text" type="time" tabindex="3" name="time" class="form-control" id="time" />

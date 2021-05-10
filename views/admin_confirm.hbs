@@ -1,0 +1,47 @@
+
+
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Signup</title>
+  <link rel="stylesheet" href="/admin_confirm1.css">
+</head>
+<body>
+<div class="bg"></div>
+<div class="bg bg2"></div>
+<div class="bg bg3"></div>
+<div class="container">
+  <h1>Schedule Appointment</h1>
+
+  <form action="/auth/admin_confirm" method="POST">
+    <div class="form-group">
+        <label for="patient"><b>Patient: </b></label>
+        <input type="text" value="" name="patient" class="form-control" id="patient" />
+    </div>
+    <div class="form-group">
+        <label for="doctor"><b>Doctor: </b></label>
+      <input type="text"  value="" name="doctor" class="form-control" id="doctor" />
+    </div>
+    <div class="form-group">
+    <label for="fee"><b>Fee: </b></label>
+      <input type="number"  value="" name="fee" class="form-control" id="fee" />
+    </div>
+    <div class="form-group">
+        <label for="date"><b>Date: </b></label>
+        <input type="date" value="" name="date" class="form-control" id="date" />
+    </div>
+    <div class="form-group">
+        <label for="time"><b>Time: </b></label>
+        <input type="time" value="" name="time" class="form-control" id="time" />
+    </div>
+   
+    
+      
+      {{#if message }}
+        
+        <h4 class="alert mt-4">{{message}}</h4>
+     {{/if}}
+    <input class="btn" type="submit" name="" value="Confirm">
+  </form>
+</body>

@@ -1,0 +1,80 @@
+body{
+
+    background: url("https://images.squarespace-cdn.com/content/v1/60127b150e53a670b6accd86/1612258671565-H2SCHHKSJZL193F3V4XA/ke17ZwdGBToddI8pDm48kI6UKPR5DTo1APl200R1gT5Zw-zPPgdn4jUwVcJE1ZvWQUxwkmyExglNqGp0IvTJZUJFbgE-7XRK3dMEBRBhUpwCGDhvccXf3RLWH7jsf0D5FW0KXwhl9EBjIy2MrF8pTxNalUmrRYROf3rgMgo0HwI/services-free-phone-consultation-1.jpg");
+ 
+
+  padding-top: 12rem;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+
+}
+.hero-image {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5));
+  height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+
+nav {
+    background-color:white;
+    color:teal;
+    padding: 60px 60px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.button {
+  padding: 15px 25px;
+  font-size: 24px;
+  text-align: center;
+  cursor: pointer;
+  outline: none;
+  color: #fff;
+  background-color: black;
+  border: none;
+  border-radius: 100px;
+  box-shadow: 0 9px #999;
+}
+
+.button:hover {background-color: #3e8e41}
+
+.button:active {
+  background-color: grey;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+nav {
+    background-color:white;
+    color:teal;
+    padding: 30px 60px;
+    display: flex;
+    justify-content: space-between;
+}
+.hero-text {
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+}
+.hero-text button {
+  border: none;
+  outline: 0;
+  display: inline-block;
+  padding: 10px 25px;
+  color: black;
+  background-color: rgb(87, 204, 175);
+  text-align: center;
+  cursor: pointer;
+}
+
+.hero-text button:hover {
+  background-color: rgb(112, 231, 196);
+  color:rgb(10, 3, 3);
+  font-family: Georgia, 'Times New Roman', Times, serif;
+}
